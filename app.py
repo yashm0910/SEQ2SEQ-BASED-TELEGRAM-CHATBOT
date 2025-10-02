@@ -29,7 +29,7 @@ def reply(user_msg, max_length=60, temperature=0.7, top_p=0.9):
 
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-API_TOKEN = "8208709847:AAGrYGjCD9-myvRfnbYhbkMpnnc8RhBhIno"
+API_TOKEN = "BOT_API_TOKEN"
 
 async def start(update, context):
     await update.message.reply_text("Hello! I’m your AI auto-reply bot 🤖")
@@ -50,4 +50,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
